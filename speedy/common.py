@@ -17,7 +17,7 @@ import cPickle
 
 from . import config, util
 
-RPC_ID = xrange(1000000000).__iter__()
+RPC_ID = xrange(int(1e12)).__iter__()
 
 CLIENT_PENDING = weakref.WeakKeyDictionary()
 SERVER_PENDING = weakref.WeakKeyDictionary()
